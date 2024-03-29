@@ -1,6 +1,16 @@
-
+<!DOCTYPE html>
 <html>
-<body>
+     
+<head>
+         <meta charset="UTF-8">
+         <meta http-equip="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- <link rel="stylesheet" href="C:\Users\LENOVO\Desktop\plateforme\dossierCSS\style2.css"> -->
+         <link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+     
+         <title></title>
+</head>
+<body [ngStyle]="{backgroundImage:'url('+image+')'}">
     <div class="forme-nav">
 
         <div class="contenu-nav">
@@ -8,26 +18,27 @@
             <!-- <div class="btn-all">
                 Connexion
             </div> -->
-            <p>Creer compte Medecin </p>
+            <h2>Creer compte Medecin </h2>
         </div>
     </div>
 
 
 
     <div class="container">
-        <h1>Se connecter</h1>
+        <h3>Informations du Medecin :</h3>
         <div class="login-content">
 
             <!-- [(ngModel)]="email" > -->
             <!-- [(ngModel)]="password"> -->
-
-            <input type="text" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Mot De Pass">
-
+            <h2>NOM:<input type="text" name="nom" placeholder="nom"><br>
+            PRENOM: <input type="text" name="prenom" placeholder="Prenom"><br>
+            Telephone: <input type="number" name="telephone" placeholder="Numero de Telephone"><br>
+            Mot De Pass: <input type="password" name="password" placeholder="Mot De Pass">
+        </h2>
             <!-- <div (click)="redirecToHome()" class="btn-all"> -->
             <div class="btn-all">
             
-                CONNEXION
+                VALIDER
             </div>
         </div>
     </div> 

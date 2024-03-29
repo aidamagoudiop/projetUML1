@@ -1,25 +1,32 @@
 .forme-nav{
     width: 100%;
     display: flex;
-    background-color: black;
+    background-color:white;
+    // background-image: url(image1.jpeg);
+
 }
 .contenu-nav{
     width: 100%;
     display: flex;
    
 }
-.contenu-nav p{
+.contenu-nav h2{
    text-align: center;
    color:rgb(73, 156, 14);  
-   font-size: 1.5em;
-   margin-left: 370px;
+   font-size: 2.2em;
+   margin-left: 440px;
    margin-top: 50px;
 }
 body{
-    background-color: black;
+    
     margin: 0;
-    top: 0;
-    margin-top: 0;
+    margin-top: -120px;
+    width: 100vw;
+    height: 700px;
+    background-image: url(image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
 }
 
 
@@ -27,15 +34,21 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
+    // margin-top: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -90px;
-    background-color: black;
+    margin-top: -20px;
+    margin-left: 40px;
+
+    
+    // background-color: white;
+    // background-image: url(image1.jpeg);
+    
 }
-.container h1{
-    color: rgb(73, 156, 14);
-    font-size: 2.4em;
+.container h3{
+    color: rgb(20, 27, 16);
+    font-size: 2.5em;
     
 }
 
@@ -44,16 +57,21 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 250px;
+}
+.login-content h2{
+  color: rgba(71, 74, 70, 0.548);
 }
 
 input{
     width: 50%;
-    margin: 5px auto;
+    margin: 10px auto;
+    // margin-left:10px;
     padding: 10px;
-    border-radius: 60px;
+    border-radius: 10px;
     outline: none;
-    border: none;
-    background: black;
+    border: 2p solid green;
+    background: rgba(179, 173, 173, 0.46);
     box-shadow: 2px 3px 30px 2px rgba(125, 125, 125, 0.2);
     color: white;
     border: 0.3px solid rgb(75, 63, 65);
@@ -61,22 +79,26 @@ input{
 
 
 .btn-all{
-    background:rgb(73, 156, 14);
-    color: black;
+    background:rgba(145, 146, 144, 0.802);
+    color: rgb(7, 6, 6);
+    border: 2px  solid black;
     // width: 50%;
     margin: 2rem auto;
+    margin-left: 170px;
     display: flex;
     justify-content: center;
     padding: 6px;
     border-bottom: 350px;
     border-radius: 10px;
     width: 30%;
-    font-size: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    
     // border: 40px solid rgb(227, 149, 162) ;
 }
 
 .btn-all:hover{
-    background: rgba(131, 121, 189, 0.2);
+    background: rgba(69, 147, 193, 0.449);
     cursor: pointer;
     color: white;
 

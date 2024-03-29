@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projetUML';
+  // image='image1.jpeg';
+
 }

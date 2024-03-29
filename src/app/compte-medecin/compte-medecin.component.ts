@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./compte-medecin.component.scss']
 })
 export class CompteMedecinComponent {
-
+  image='image1.jpg';
 }

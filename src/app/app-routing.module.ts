@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { DossierPatientComponent } from './dossier-patient/dossier-patient.component';
+import { CompteMedecinComponent } from './compte-medecin/compte-medecin.component';
 //import { AccueilComponent } from './accueil/accueil.component';
 
 
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'compte-medecin',
+    component: CompteMedecinComponent
   },
   {
     path: 'dossier-patient',
