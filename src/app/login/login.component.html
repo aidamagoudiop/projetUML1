@@ -20,12 +20,12 @@
             <!-- [(ngModel)]="email" > -->
             <!-- [(ngModel)]="password"> -->
 
-            <input type="text" id="numero_telephone" name="numero_telephone" placeholder="Numero de telephone">
+            <input type="text" 
+            #numero_telephone name="numero_telephone" placeholder="Numero de telephone">
             <input type="password" id="mdp" name="mdp" placeholder="Mot De Pass">
 
             <!-- <div (click)="redirecToHome()" class="btn-all"> -->
-            <div class="btn-all">
-            
+            <div class="btn-all" (click)="redirecToInterfaceAdmin()">
                 CONNEXION
             </div>
         </div>

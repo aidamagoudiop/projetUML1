@@ -1,7 +1,7 @@
 .forme-nav{
     width: 100%;
     display: flex;
-    background-color: black;
+    // background-color: black;
 }
 .contenu-nav{
     width: 100%;
@@ -11,15 +11,23 @@
 .contenu-nav p{
    text-align: center;
    color:rgb(73, 156, 14);  
-   font-size: 1.5em;
-   margin-left: 370px;
-   margin-top: 50px;
+   font-size: 2em;
+   font-weight: 700;
+   margin-left: 250px;
+   margin-top: 100px;
 }
 body{
-    background-color: black;
+    // background-color: black;
     margin: 0;
     top: 0;
     margin-top: 0;
+    margin-top: 0px;
+    // margin-top: -120px;
+    width: 100vw;
+    height: 700px;
+    background-image: url(image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -30,8 +38,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -90px;
-    background-color: black;
+    margin-top: -130px;
+    // background-color: black;
 }
 .container h1{
     color: rgb(73, 156, 14);
@@ -48,8 +56,8 @@ body{
 
 input{
     width: 50%;
-    margin: 5px auto;
-    padding: 10px;
+    margin: 7px auto;
+    padding:15px;
     border-radius: 60px;
     outline: none;
     border: none;

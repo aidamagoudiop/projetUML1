@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NameService } from './name.service';
+
 // import { DossierPatientComponent } from './dossier-patient/dossier-patient.component';
 
 
@@ -10,13 +12,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projetUML';
   // image='image1.jpeg';
-  // constructor(private dossierPatient:DossierPatientComponent){
+  constructor(private nameService:NameService){
 
-  // }
-  // onSend(nom:string){
-  //   const formData : FormData = new FormData()
-  //   formData.append('nom',nom)
-  // }
+  }
 
 }
 

@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { DossierPatientComponent } from './dossier-patient/dossier-patient.component';
 import { CompteMedecinComponent } from './compte-medecin/compte-medecin.component';
 import { InterfaceAdministrateurComponent } from './interface-administrateur/interface-administrateur.component';
+import { InterfaceAssistantComponent } from './interface-assistant/interface-assistant.component';
+import { InterfaceMedecinComponent } from './interface-medecin/interface-medecin.component';
 //import { AccueilComponent } from './accueil/accueil.component';
 
 
@@ -34,6 +36,14 @@ const routes: Routes = [
   {
     path: 'interface-administrateur',
     component: InterfaceAdministrateurComponent
+  },
+  {
+    path: 'interface-medecin',
+    component: InterfaceMedecinComponent
+  },
+  {
+    path: 'interface-assistant',
+    component: InterfaceAssistantComponent
   }
   // {
   //   path: 'interface-administrateur',

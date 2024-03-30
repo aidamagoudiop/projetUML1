@@ -11,6 +11,9 @@ import { CompteAssistantComponent } from './compte-assistant/compte-assistant.co
 import { InterfaceAdministrateurComponent } from './interface-administrateur/interface-administrateur.component';
 //import { AccueilComponent } from './accueil/accueil.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NameService } from './name.service';
+import { InterfaceAssistantComponent } from './interface-assistant/interface-assistant.component';
+import { InterfaceMedecinComponent } from './interface-medecin/interface-medecin.component';
 
 
 @NgModule({
@@ -22,14 +25,19 @@ import { HttpClientModule } from '@angular/common/http';
     CompteMedecinComponent,
     CompteAssistantComponent,
     InterfaceAdministrateurComponent,
+    InterfaceAssistantComponent,
+    InterfaceMedecinComponent,
    // AccueilComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
-  providers: [],
+  providers: [
+    NameService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
