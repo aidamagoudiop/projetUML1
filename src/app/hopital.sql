@@ -5,7 +5,7 @@ CREATE DATABASE application;
 USE application;
 
 CREATE TABLE Administrateur(
-            id_assistant INT PRIMARY KEY AUTO_INCREMENT,
+            id_administrateur INT PRIMARY KEY AUTO_INCREMENT,
             nom VARCHAR(20),
             prenom VARCHAR(20),
             passwd VARCHAR(20),

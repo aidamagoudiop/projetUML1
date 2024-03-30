@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { DossierPatientComponent } from './dossier-patient/dossier-patient.component';
 import { CompteMedecinComponent } from './compte-medecin/compte-medecin.component';
 import { CompteAssistantComponent } from './compte-assistant/compte-assistant.component';
+import { InterfaceAdministrateurComponent } from './interface-administrateur/interface-administrateur.component';
 //import { AccueilComponent } from './accueil/accueil.component';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { CompteAssistantComponent } from './compte-assistant/compte-assistant.co
     DossierPatientComponent,
     CompteMedecinComponent,
     CompteAssistantComponent,
+    InterfaceAdministrateurComponent,
    // AccueilComponent
   ],
   imports: [
