@@ -10,6 +10,8 @@ import { CompteMedecinComponent } from './compte-medecin/compte-medecin.componen
 import { CompteAssistantComponent } from './compte-assistant/compte-assistant.component';
 import { InterfaceAdministrateurComponent } from './interface-administrateur/interface-administrateur.component';
 //import { AccueilComponent } from './accueil/accueil.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { InterfaceAdministrateurComponent } from './interface-administrateur/int
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

@@ -17,69 +17,152 @@
 	</style>
 </head>
 <body>
-<form method="POST" action="index.php">
 
-    <h3>DOSSIER PATIENT</h3>
+<h1>Get Method</h1> 
+<p>{{getJsonValue | json}}</p>
+
+<h1>Post Method</h1> 
+<p>{{postJsonValue | json}}</p>
+
+
+
+
+
+
+<form method="POST" action="index.php">
+    <h3 style="text-align: center;">DOSSIER PATIENT</h3>
     
-    <label for="nom">Num Dossier: </label>
+    <label for="nom">Numero Dossier: </label>
+    <input type="text" name="nom" placeholder="nom" ><br><br>
+
+    <label for="nom">Numero d'Archives: </label>
     <input type="text" name="nom"><br><br>
 
-    <h3>Aspects Demographiques</h3>  
-        Initiales (N/P): <input type="text" name="initiales">
-        Statut Matrimoniale: <input type="text" name="nom">
-        Age: <input type="text" name="nom">
-        Adresse: <input type="text" name="nom">
-        Telephone: <input type="text" name="nom">
-        Profession: <input type="text" name="nom">
-        Niveau Socio-economique: <input type="text" name="nom">
+
+    <label for="nom">Nom: </label>
+    <input type="text" name="nom"><br><br>
 
 
+    <label for="prenom">Prenom: </label>
+    <input type="text" name="prenom"><br><br>
 
 
+    <label for="ddn">Date de naissance: </label>
+    <input type="text" name="ddn"><br><br>
 
 
-    <!-- <label for="note">Note :</label>
-    <input type="number" name="note"><br><br>
+    <label for="adresse">Adresse: </label>
+    <input type="text" name="adresse"><br><br>
 
-    <input type="submit" value="Envoyer"> -->
 
-    <table>
+    <label for="tel">Telephone: </label>
+    <input type="text" name="tel"><br><br>
+
+
+    <label for="CAS">Caisse Assurance Sociale: </label>
+    <input type="text" name="CAS"><br><br>
+
+
+    <label for="MutC">Mutuelle Complementaire: </label>
+    <input type="text" name="MutC"><br><br>
+    
+     
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Hospitalisation</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
         <tr>
-            <th>Matiere</th>
-            <th>Note</th>
+            <th>Services</th>
+            <th colspan="2">Date Hospitalisation</th>
+            <th>Provenance</th>
+            <th>Numero Séjour</th>
+            <th>Médecin</th>
+            <th>Destination</th>
         </tr>
-
         <tr>
-            <td>Mathematiques</td>
-            <td><input type="number" name="note_maths" min="0" max="20"></td>
+            <th></th>
+            <th>Date Entrée</th>
+            <th>Date Sortie</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
-
+    </thead>
+    <tbody>
         <tr>
-            <td>Anglais</td>
-            <td><input type="number" name="note_anglais" min="0" max="20"></td>
-        
+            <td><input type="text" name="service1"></td>
+            <td><input type="text" name="dateEntree1"></td>
+            <td><input type="text" name="dateSortie1"></td>
+            <td><input type="text" name="provenance1"></td>
+            <td><input type="text" name="numeroSejour1"></td>
+            <td><input type="text" name="medecin1"></td>
+            <td><input type="text" name="destination1"></td>
         </tr>
-
         <tr>
-            <td>Francais</td>
-            <td><input type="number" name="note_francais" min="0" max="20"></td>
-        
+            <td><input type="text" name="service2"></td>
+            <td><input type="text" name="dateEntree2"></td>
+            <td><input type="text" name="dateSortie2"></td>
+            <td><input type="text" name="provenance2"></td>
+            <td><input type="text" name="numeroSejour2"></td>
+            <td><input type="text" name="medecin2"></td>
+            <td><input type="text" name="destination2"></td>
         </tr>
-
         <tr>
-            <td>Histoire-geo</td>
-            <td><input type="number" name="note_histo_geo" min="0" max="20"></td>
-        
+            <td><input type="text" name="service3"></td>
+            <td><input type="text" name="dateEntree3"></td>
+            <td><input type="text" name="dateSortie3"></td>
+            <td><input type="text" name="provenance3"></td>
+            <td><input type="text" name="numeroSejour3"></td>
+            <td><input type="text" name="medecin3"></td>
+            <td><input type="text" name="destination3"></td>
         </tr>
-        
-        
-    </table>
+        <tr>
+            <td><input type="text" name="service4"></td>
+            <td><input type="text" name="dateEntree4"></td>
+            <td><input type="text" name="dateSortie4"></td>
+            <td><input type="text" name="provenance4"></td>
+            <td><input type="text" name="numeroSejour4"></td>
+            <td><input type="text" name="medecin4"></td>
+            <td><input type="text" name="destination4"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="service5"></td>
+            <td><input type="text" name="dateEntree5"></td>
+            <td><input type="text" name="dateSortie5"></td>
+            <td><input type="text" name="provenance5"></td>
+            <td><input type="text" name="numeroSejour5"></td>
+            <td><input type="text" name="medecin5"></td>
+            <td><input type="text" name="destination5"></td>
+        </tr>
+    </tbody>
+</table>
+<!-- <input type="submit" value="Valider">  -->
+<!-- <button (click)="onSend(nom.value)">Valider</button> -->
 
-    <input type="submit" value="Envoyer"> 
+
+</body>
+</html>
 
 
 </form>
 </body>
 </html>
-
-
