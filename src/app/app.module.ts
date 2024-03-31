@@ -14,7 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NameService } from './name.service';
 import { InterfaceAssistantComponent } from './interface-assistant/interface-assistant.component';
 import { InterfaceMedecinComponent } from './interface-medecin/interface-medecin.component';
-
+import { EnregistrerPatientComponent } from './enregistrer-patient/enregistrer-patient.component';
+import { GererCompteMedecinComponent } from './gerer-compte-medecin/gerer-compte-medecin.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,12 @@ import { InterfaceMedecinComponent } from './interface-medecin/interface-medecin
     InterfaceAdministrateurComponent,
     InterfaceAssistantComponent,
     InterfaceMedecinComponent,
+    EnregistrerPatientComponent,
+    GererCompteMedecinComponent,
    // AccueilComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,

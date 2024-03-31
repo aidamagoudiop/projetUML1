@@ -1,0 +1,46 @@
+<h2>Gérer les comptes médecins</h2>
+
+<!-- Affichage de la liste des médecins -->
+<!-- <div *ngIf="doctors.length > 0; else noDoctors"> -->
+<div *ngIf="doctors.length > 0; ">
+    <ul>
+    <li *ngFor="let doctor of doctors">
+      {{ doctor.name }} - {{ doctor.specialty }}
+      <!-- Exemple de données à afficher -->
+      <!-- Ajoutez d'autres informations sur le médecin au besoin -->
+      <button (click)="updateDoctor(doctor)">Modifier</button>
+      <button (click)="deleteDoctor(doctor.id)">Supprimer</button>
+    </li>
+  </ul>
+</div>
+
+<!-- Cas où il n'y a aucun médecin -->
+<!-- <ng-template #noDoctors>
+  <p>Aucun médecin trouvé.</p>
+</ng-template> -->
+
+<!-- Formulaire pour créer un nouveau médecin -->
+<h3>Ajouter un nouveau médecin</h3>
+
+<!-- <form  (submit)="createDoctor(newDoctorForm)"> -->
+<!-- <form #newDoctorForm (submit)="createDoctor(newDoctorForm)" > -->
+<form #newDoctorForm (submit)="createDoctor(newDoctorForm['value'])">
+    <label for="name">Nom du médecin:</label>
+  <input
+    type="text"
+    id="name"
+    name="name"
+    required
+    [(ngModel)]="newDoctorName"
+  />
+  <label for="specialty">Spécialité:</label>
+  <input
+    type="text"
+    id="specialty"
+    name="specialty"
+    required
+    [(ngModel)]="newDoctorSpecialty"
+  />
+  <!-- Ajoutez d'autres champs au besoin -->
+  <button type="submit">Ajouter</button>
+</form>

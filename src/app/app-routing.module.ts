@@ -12,6 +12,7 @@ import { CompteMedecinComponent } from './compte-medecin/compte-medecin.componen
 import { InterfaceAdministrateurComponent } from './interface-administrateur/interface-administrateur.component';
 import { InterfaceAssistantComponent } from './interface-assistant/interface-assistant.component';
 import { InterfaceMedecinComponent } from './interface-medecin/interface-medecin.component';
+import { GererCompteMedecinComponent } from './gerer-compte-medecin/gerer-compte-medecin.component';
 //import { AccueilComponent } from './accueil/accueil.component';
 
 
@@ -44,6 +45,10 @@ const routes: Routes = [
   {
     path: 'interface-assistant',
     component: InterfaceAssistantComponent
+  },
+  {
+    path: 'gerer-compte-medecin',
+    component: GererCompteMedecinComponent
   }
   // {
   //   path: 'interface-administrateur',

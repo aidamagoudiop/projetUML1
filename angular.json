@@ -52,7 +52,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/app/gerer-compte-medecin/gerer-compte-medecin.component.scss"
             ],
             "scripts": []
           },
