@@ -17,6 +17,7 @@ import { InterfaceMedecinComponent } from './interface-medecin/interface-medecin
 import { EnregistrerPatientComponent } from './enregistrer-patient/enregistrer-patient.component';
 import { GererCompteMedecinComponent } from './gerer-compte-medecin/gerer-compte-medecin.component';
 import { FormsModule } from '@angular/forms';
+import { MedecinAjouteComponent } from './compte-medecin/medecin-ajoute/medecin-ajoute.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +32,14 @@ import { FormsModule } from '@angular/forms';
     InterfaceMedecinComponent,
     EnregistrerPatientComponent,
     GererCompteMedecinComponent,
+    MedecinAjouteComponent,
    // AccueilComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
+    AppRoutingModule
     
   ],
   providers: [
