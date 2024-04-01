@@ -30,17 +30,32 @@
 
             <!-- [(ngModel)]="email" > -->
             <!-- [(ngModel)]="password"> -->
-            <h2>NOM:<input type="text" name="nom" id="nom" placeholder="nom"><br>
-            PRENOM: <input type="text" name="prenom" placeholder="Prenom"><br>
-            Telephone: <input type="number" name="telephone" placeholder="Numero de Telephone"><br>
-            Mot De Pass: <input type="password" name="password" id="mdp" placeholder="Mot De Pass">
-        </h2>
-            <!-- <div (click)="redirecToHome()" class="btn-all"> -->
-            <div  (click)="redirecToMedecinAjoute()" class="btn-all">
-               <!-- <button  (click)="valider()"> VALIDER</button> -->
-               VALIDER
-                {{response}}
-            </div>
+            <form (ngSubmit)="createData()">
+                    <h2>NOM:<input type="text" name="nom" id="nom" placeholder="nom" required [(ngModel)]="nom" required><br>
+                    PRENOM: <input type="text" name="prenom" placeholder="Prenom" required [(ngModel)]="prenom" required><br>
+                    Telephone: <input type="number" name="telephone" placeholder="Numero de Telephone" required [(ngModel)]="numero_telephone" required><br>
+                    Mot De Pass: <input type="password" name="password" id="mdp" placeholder="Mot De Pass"required [(ngModel)]="mdp" required>
+                    </h2>
+                    <button (click)="redirecToMedecinAjoute()" class="btn-all"
+                    type="submit" >  VALIDER</button> 
+                    <!-- <div (click)="redirecToHome()" class="btn-all"> -->
+                    <!-- <div  > -->
+                    <!-- <button  (click)="valider()"> VALIDER</button>
+                     VALIDER
+                        {{response}} 
+                     </div> -->
+
+                    <!-- <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required [(ngModel)]="nom" required><br><br>
+                    
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required [(ngModel)]="prenom" required><br><br>
+                
+                    <label for="Numero de telephone">Numero de telephone</label>
+                    <input type="text" id="numero_telephone" name="numero_telephone" required [(ngModel)]="numero_telephone" required><br><br>
+                 -->
+                    
+            </form>
         </div>
     </div> 
 </body>

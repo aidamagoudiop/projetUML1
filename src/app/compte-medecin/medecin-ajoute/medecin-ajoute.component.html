@@ -10,24 +10,26 @@
     <title>Medecins Ajoutés</title>
 </head>
 <body>
-    <div class="forme-nav">
-        <div class="contenu-nav">
-            <h2>Medecins Ajoutés</h2>
+    <form action="recupereMedecin.php"> 
+        <div class="forme-nav">
+            <div class="contenu-nav">
+                <h2>Medecins Ajoutés</h2>
+            </div>
         </div>
-    </div>
 
-    <div class="container">
-        <h3>Liste des Médecins :</h3>
-        <div class="medecins-content">
-            <!-- Ici, vous pouvez insérer la logique Angular pour afficher la liste des médecins ajoutés -->
-            <!-- Par exemple : -->
-            <div *ngFor="let medecin of medecins">
-                     <p>Nom: {{ medecin.nom}}</p>
-                     <p>Nom: {{ medecin.prenom}}</p>
-                     <p>Nom: {{ medecin.numero_telephone}}</p>
-            </div> 
-        </div>
- 
-    </div> 
+        <div class="container">
+            <h3>Liste des Médecins :</h3>
+            <div class="medecins-content">
+                <!-- Ici, vous pouvez insérer la logique Angular pour afficher la liste des médecins ajoutés -->
+                <!-- Par exemple : -->
+                <div *ngFor="let medecin of medecins">
+                        <p>Nom: {{ medecin.nom}}</p>
+                        <p>Nom: {{ medecin.prenom}}</p>
+                        <p>Nom: {{ medecin.numero_telephone}}</p>
+                </div> 
+            </div>
+    
+        </div> 
+    </form>
 </body>
 </html>

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+		table{
+			border-collapse: collapse;
+			width: 100%;
+		}
+        
+        th, td {
+		  border: 1px solid black;
+		  padding: 8px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<form method="POST" action="index.php">
+
+    <h3>DOSSIER PATIENT</h3>
+    
+    <label for="nom">Num Dossier: </label>
+    <input type="text" name="nom"><br><br>
+
+    <h3>Aspects Demographiques</h3>  
+        Initiales (N/P): <input type="text" name="initiales">
+        Statut Matrimoniale: <input type="text" name="nom">
+        Age: <input type="text" name="nom">
+        Adresse: <input type="text" name="nom">
+        Telephone: <input type="text" name="nom">
+        Profession: <input type="text" name="nom">
+        Niveau Socio-economique: <input type="text" name="nom">
+
+
+
+
+
+
+    <!-- <label for="note">Note :</label>
+    <input type="number" name="note"><br><br>
+
+    <input type="submit" value="Envoyer"> -->
+
+    <table>
+        <tr>
+            <th>Matiere</th>
+            <th>Note</th>
+        </tr>
+
+        <tr>
+            <td>Mathematiques</td>
+            <td><input type="number" name="note_maths" min="0" max="20"></td>
+        </tr>
+
+        <tr>
+            <td>Anglais</td>
+            <td><input type="number" name="note_anglais" min="0" max="20"></td>
+        
+        </tr>
+
+        <tr>
+            <td>Francais</td>
+            <td><input type="number" name="note_francais" min="0" max="20"></td>
+        
+        </tr>
+
+        <tr>
+            <td>Histoire-geo</td>
+            <td><input type="number" name="note_histo_geo" min="0" max="20"></td>
+        
+        </tr>
+        
+        
+    </table>
+
+    <input type="submit" value="Envoyer"> 
+
+
+</form>
+</body>
+</html>
+
+

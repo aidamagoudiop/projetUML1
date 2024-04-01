@@ -1,6 +1,8 @@
+
 import { Component, OnInit } from '@angular/core';
 import { NameService } from '../name.service';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 // import { MedecinAjouteComponent } from './medecin-ajoute/medecin-ajoute.component';
 
 // import { NameService } from './name.service';
@@ -11,18 +13,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./compte-medecin.component.scss']
 })
 export class CompteMedecinComponent implements OnInit{
+  nom: string='';
+  prenom: string='';
+  numero_telephone: string='';
+  mdp: string='';
+  
   image='image1.jpg';
   response=""
   // ,private medecinAjouteComponent: MedecinAjouteComponent
-  constructor(private nameService : NameService, private router:Router ){  }
+  constructor(private http: HttpClient, private nameService : NameService, private router:Router ){  }
   
-  createData(nom: string, prenom: string, numero_telephone: string, mdp: string): void {
+  createData(): void {
     
     const medecinData = {
-      nom: nom,
-      prenom: prenom,
-      numero_telephone: numero_telephone,
-      mdp: mdp
+      nom: this.nom,
+      prenom: this.prenom,
+      numero_telephone: this.numero_telephone,
+      mdp: this.mdp
     };
 
     this.nameService.createData(medecinData).subscribe(
@@ -60,10 +67,10 @@ export class CompteMedecinComponent implements OnInit{
     this.router.navigateByUrl("/medecin-ajoute")
   }
 
-  onSend(numero_telephone:string){
-    const formData : FormData = new FormData()
-    formData.append('numero_telephone',numero_telephone)
-    // this.nameService.onSendService(formData).subscribe()
+  // onSend(numero_telephone:string){
+    // const formData : FormData = new FormData()
+    // formData.append('numero_telephone',numero_telephone)
+    // // this.nameService.onSendService(formData).subscribe()
     // (res=>{
     //   console.log(res);
     //   this.response=res
@@ -72,4 +79,3 @@ export class CompteMedecinComponent implements OnInit{
     //   console.log(err);
     // })
   }
-}

@@ -17,7 +17,9 @@ export interface Medecin {
 
 export class NameService {
 
-  baseUrl = 'http://localhost/web_api';
+  // baseUrl = 'http://localhost:8001/web_api';
+  baseUrl = 'http://localhost:8001/';
+
 
   constructor(private http:HttpClient) { }
   onSendService(fromData: FormData):Observable<any>{
@@ -37,19 +39,19 @@ export class NameService {
 
 // ----------------METHODES----------------------------
   createData(data: any): Observable<any> {
-    return this.http.post('http://localhost:80/web_api/create', data);
+    return this.http.post('http://localhost:8001/create', data);
   }
 
   readData(): Observable<any> {
-    return this.http.get('http://localhost:80/web_api/read');
+    return this.http.get('http://localhost:8001/read');
   }
 
   updateData(data: any): Observable<any> {
-    return this.http.put('http://localhost:80/web_api/update', data);
+    return this.http.put('http://localhost:8001/update', data);
   }
 
   deleteData(id: number): Observable<any> {
-    return this.http.delete(`http://localhost:80/web_api/delete/${id}`);
+    return this.http.delete(`http://localhost:8001/delete/${id}`);
   }
 
 }
