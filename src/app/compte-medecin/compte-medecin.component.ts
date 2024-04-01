@@ -64,8 +64,15 @@ export class CompteMedecinComponent implements OnInit{
   }
 
   redirecToMedecinAjoute(){
-    this.router.navigateByUrl("/medecin-ajoute")
+    // this.router.navigateByUrl("/medecin-ajoute")
+    // this.router.navigateByUrl("http://localhost:8001/creerMedecin.php")
+    window.location.href = "http://localhost:8001/creerMedecin.php";
+    
   }
+  // redirectToMedecinAjoute(){
+  //   window.location.href = "http://localhost:8001/creerMedecin.php";
+  //   // this.router.navigateByUrl("/medecin-ajoute")
+  // }
 
   // onSend(numero_telephone:string){
     // const formData : FormData = new FormData()

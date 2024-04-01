@@ -39,7 +39,8 @@ export class NameService {
 
 // ----------------METHODES----------------------------
   createData(data: any): Observable<any> {
-    return this.http.post('http://localhost:8001/create', data);
+    // return this.http.post('http://localhost:8001/create', data);
+    return this.http.post('http://localhost:8001/creerMedecin', data);
   }
 
   readData(): Observable<any> {
